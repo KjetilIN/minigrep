@@ -35,7 +35,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     };
 
     for line in results{
-        print!("{line}");
+        print!("{line}\n");
     }
 
     Ok(())
