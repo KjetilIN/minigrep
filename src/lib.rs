@@ -72,6 +72,15 @@ pub fn search_case_insensitive<'a>(query: &str, content: &'a str) -> Vec<&'a str
 
 }
 
+// Print command that outputs some basic information about the tool
+pub fn print_commands(){
+    print!("Minigrep - A Rust cli tool that implements the grep command on a small scale \n");
+    print!("Usage with cargo: cargo run [WORD] [FILE.txt]\n");
+    print!("    cargo run cm - List all commands available\n");
+    print!("    cargo run [WORD] [FILENAME.txt] - List all lines that contains the given word (case insensitive)\n");
+    print!("    IGNORE_CASE=false cargo run [WORD] [FILENAME.txt] - List all lines that contains the given word (case sensitive)\n");
+}
+
 
 
 
